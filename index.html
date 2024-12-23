@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogging Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="auth-section">
+      <h1>Blogging Platform</h1>
+      <div id="login-form">
+        <h2>Sign In</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <button id="login-btn">Sign In</button>
+        <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+      </div>
+      <div id="signup-form" class="hidden">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Create a username" required>
+        <button id="signup-btn">Sign Up</button>
+        <p>Already have an account? <a href="#" id="signin-link">Sign in</a></p>
+      </div>
+    </div>
+
+    <div id="blog-section" class="hidden">
+      <h1>Welcome, <span id="current-user"></span>!</h1>
+      <button id="logout-btn">Log Out</button>
+      <h2>Create a New Blog Post</h2>
+      <input type="text" id="blog-title" placeholder="Blog Title">
+      <textarea id="blog-content" placeholder="Blog Content"></textarea>
+      <button id="post-btn">Post</button>
+
+      <h2>Your Blog Posts</h2>
+      <div id="blogs"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
